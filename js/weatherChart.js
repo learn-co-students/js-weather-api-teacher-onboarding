@@ -32,10 +32,6 @@ makeRequest = (endpoint, canvas) => {
       const hourlyData = data.hourly.data
       const tempChart = new Chart(canvas, generateDataSet(getHour(hourlyData), getFahrenheit(hourlyData)))
   })
-  // Your code goes here
-
-  // After your fetch works - use your json data with the line below :)
-  // const tempChart = new Chart(canvas, generateDataSet(getHour(hourlyData), getFahrenheit(hourlyData)))
 }
 
 
