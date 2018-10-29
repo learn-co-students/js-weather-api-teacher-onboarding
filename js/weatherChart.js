@@ -1,16 +1,8 @@
 getFahrenheit = result =>
   result.map(dataPoint => dataPoint.temperature)
 
-// getHour = result =>
-//   result.map(dataPoint => new Date(dataPoint.time * 1000).getHours())
-
-function getHour(result){
-  // Your code goes here
-  return result.map(function(hour){
-    let newHour = new Date(hour.time*1000)
-    return newHour.getHours()
-  })
-}
+getHour = result =>
+  result.map(dataPoint => new Date(dataPoint.time * 1000).getHours())
 
 function generateDataSet(labels, data) {
   return {
